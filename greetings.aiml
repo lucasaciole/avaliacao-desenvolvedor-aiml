@@ -19,6 +19,11 @@
   </category>
 
   <category>
+      <pattern>_ COMO _ ME CHAMO</pattern>
+      <template><srai>_ MEU NOME</srai></template>
+  </category>
+
+  <category>
       <pattern>_ MEU NOME</pattern>
       <template>
           <condition name="name">
