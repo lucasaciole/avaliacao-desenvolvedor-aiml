@@ -17,14 +17,22 @@
       <template>
           <condition name="name">
             <li value="unknown">Tem como eu sabe não, cê não falo!</li>
-            <li value="unknown">É Chico? Ih rapai, sei não!</li>
             <li>Cê eu num tivé minganado, u cê falo que se chama <get name="name" />.</li>
           </condition>
-          </template>
+      </template>
   </category>
-  
+
   <category>
-      <pattern>_ ME CHAMO</pattern>
-      <template><srai>MEU NOME</srai></template>
+    <pattern>CONTE DE <set>number</set> ATÉ <set>number</set></pattern>
+    <template>
+      <think>
+          <set name="countvar"><star/></set>
+          <set name="count"><map><name>predecessor</name><star index="0"/></map></set>
+      </think>
+      <condition name="count">
+        <li><value><star index="2"/></value></li>
+        <li><set name="count"><map><name>successor</name><get name="count"/></map></set><loop/>,</li>
+      </condition>
+    </template>
   </category>
 </aiml>
