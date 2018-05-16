@@ -27,8 +27,14 @@
       <pattern>_ MEU NOME</pattern>
       <template>
           <condition name="name">
-            <li value="unknown">Tem como eu sabe não, cê não falo!</li>
-            <li>Cê eu num tivé minganado, u cê falo que se chama <get name="name" />.</li>
+            <li value="*">
+                <random>
+                    <li>Qui eu mi lembri, cê chama <get name="name" />.</li>
+                    <li>É <get name="name" />... né?</li>
+                    <li>Cê eu num tivé minganado, u cê falo que se chama <get name="name" />.</li>
+                </random>
+            </li>
+            <li>Tem como eu sabe não, cê não falo!</li>
           </condition>
       </template>
   </category>
