@@ -43,7 +43,7 @@
     <pattern>CONTE DE <set>number</set> _ <set>number</set></pattern>
     <template>
       <think>
-          <set name="count"><map><name>predecessor</name><star index="0"/></map></set>
+          <set name="count"><map><name>predecessor</name><star index="1"/></map></set>
       </think>
       <condition name="count">
         <li><value><star index="3"/></value><star index="3"/></li>
