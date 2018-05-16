@@ -5,13 +5,19 @@
       <pattern>OI ^</pattern>
       <template>Olar, eu sou o Caipirot, bão te conhecê! Qual é o seu nome?</template>
   </category>
-  
+
   <category>
       <pattern>*</pattern>
       <that>QUAL _ O SEU NOME</that>
-      <template>Muito prazer viu, <set name="name"><star/></set>. Que cê precisa hoje?</template>
+      <template>
+        <random>
+          <li>Muito prazer viu, <set name="name"><star/></set>. Que cê precisa hoje?</li>
+          <li><set name="name"><star/></set> é? Mai que graça! Tá precisando de ajuda co algo?</li>
+          <li>Beleza <set name="name"><star/></set>! Que qui eu posso te ajudá?</li>
+        </random>
+      </template>
   </category>
-  
+
   <category>
       <pattern>_ MEU NOME</pattern>
       <template>
