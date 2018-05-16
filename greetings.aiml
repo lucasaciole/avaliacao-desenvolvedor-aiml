@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <category>
+      <pattern>OI ^</pattern>
+      <template>Olar, eu sou o Caipirot, bão te conhecê! Qual é o seu nome?</template>
+  </category>
+  
+  <category>
+      <pattern>*</pattern>
+      <that>QUAL _ O SEU NOME</that>
+      <template>Muito prazer viu, <set name="name"><star/></set>. Que cê precisa hoje?</template>
+  </category>
+  
+  <category>
+      <pattern>_ MEU NOME</pattern>
+      <template>
+          <condition name="name">
+            <li value="unknown">Tem como eu sabe não, cê não falo!</li>
+            <li value="unknown">É Chico? Ih rapai, sei não!</li>
+            <li>Cê eu num tivé minganado, u cê falo que se chama <get name="name" />.</li>
+          </condition>
+          </template>
+  </category>
+  
+  <category>
+      <pattern>_ ME CHAMO</pattern>
+      <template><srai>MEU NOME</srai></template>
+  </category>
+</aiml>
