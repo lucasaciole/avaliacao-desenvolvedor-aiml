@@ -2,6 +2,12 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>
+        <random>
+          <li>Tendi nada du que ocê disse.</li>
+          <li>Oi? Cê me perdoa, tava pensando na morte da bezerra...</li>
+          <li>U qué qui foi? Repete que eu num tendi.</li>
+        </random>
+    </template>
   </category>
 </aiml>
