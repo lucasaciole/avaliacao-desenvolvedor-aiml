@@ -29,14 +29,14 @@
   </category>
 
   <category>
-    <pattern>CONTE DE <set>number</set> ATÉ <set>number</set></pattern>
+    <pattern>CONTE DE <set>number</set> _ <set>number</set></pattern>
     <template>
       <think>
           <set name="countvar"><star/></set>
           <set name="count"><map><name>predecessor</name><star index="0"/></map></set>
       </think>
       <condition name="count">
-        <li><value><star index="2"/></value></li>
+        <li><value><star index="3"/></value></li>
         <li><set name="count"><map><name>successor</name><get name="count"/></map></set><loop/>,</li>
       </condition>
     </template>
