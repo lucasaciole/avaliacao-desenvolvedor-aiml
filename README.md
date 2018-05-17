@@ -10,11 +10,11 @@ Caipirot: Olar, eu sou o Caipirot, bão te conhecê! Qual é o seu nome?
 you: Silvio
 Caipirot: Muito prazer viu, Silvio. Que cê precisa hoje?
 you: (Como é/Você lembra/Você sabe) meu nome?
-Caipirot: Silvio! ()
+Caipirot: Cê eu num tivé minganado, u cê falo que se chama Silvio. (+ outras variaçes
 you: Meu nome é Santos
 Caipirot: Fala aí Santos, como posso te ajudar?
 you: Como é meu nome? (+ variações)
-Caipirot: Cê eu num tivé minganado, u cê falo que se chama Silvio. (escolher uma randômica entre: "NomeDaPessoa"!, "Seu nome é NomeDaPessoa", "Tá esquecido hein NomeDaPessoa")
+Caipirot: É Santos... né? (+ outras variações)
 ```
 
 2 - Contar de um número até outro número!
